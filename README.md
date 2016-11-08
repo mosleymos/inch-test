@@ -5,3 +5,4 @@
 - [x] Premiere version
 - [x] Add travis build
 - [x] Add editorconfig file
+- [x] Static pages not found, server error, notification
