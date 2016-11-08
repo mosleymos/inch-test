@@ -1,3 +1,9 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  root 'importcsv#import'
+  post 'database/update' => 'importcsv#update'
+
+  get 'buildings' => 'buildings#index'
+
+  get 'persons' => 'persons#index'
+
 end

@@ -1,0 +1,13 @@
+<h1>Import de vos csv</h1>
+<%= link_to "Persons", '/persons'%>
+<%= link_to "Buildings", '/buildings'%>
+
+<%= form_tag '/database/update', method: :post, multipart: true %>
+
+    <label for="person_csv">Importer le tableau de personnes</label>
+    <input type="file" accept='.csv' name="person" id="person_csv" value="" required />
+    <label for="building_csv">Importer le tableau des batiments</label>
+    <input type="file" accept='.csv' name="building" id="building_csv" value="" required />
+
+<%= submit_tag "Send csv" %>
+  

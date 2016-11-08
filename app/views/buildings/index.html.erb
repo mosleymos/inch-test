@@ -1,0 +1,16 @@
+<h1>Buildings</h1>
+<p>Liste des buildings</p>
+
+<ul>
+  <% @buildings.each do |building| %>
+  <li>
+    <p><%= building.reference %></p>
+    <p><%= building.manager_name %></p>
+    <p><%= building.address %></p>
+    <p><%= building.zip_code %></p>
+    <p><%= building.city %></p>
+  </li>
+<% end %>
+</ul>
+<%= link_to "Accueil",  root_path %>
+

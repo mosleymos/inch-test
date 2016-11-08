@@ -1,0 +1,31 @@
+# == Schema Information
+#
+# Table name: people
+#
+#  id                  :integer          not null, primary key
+#  reference           :integer          not null
+#  email               :string           default("Unknow email")
+#  home_phone_number   :string           default("Unknow home_phone_number")
+#  mobile_phone_number :string           default("000000")
+#  firstname           :string           default("Unknow firstname")
+#  lastname            :string           default("Unknow lastname")
+#  address             :string           default("Unknow address")
+#  created_at          :datetime         not null
+#  updated_at          :datetime         not null
+#
+
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+john:
+  reference: 1
+  email: johndoe@unknow.com 
+  home_phone_number: 0987598767 
+  mobile_phone_number: 0999999
+  firstname: john 
+  lastname: doe 
+  address: sycamore tree NY
+
+jane:
+  reference: 2
+  firstname: jane 
+  lastname: doe 

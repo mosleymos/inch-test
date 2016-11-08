@@ -1,0 +1,15 @@
+<h1>Persons</h1>
+<p>Liste des personnes</p>
+
+<ul>
+  <% @persons.each do |person| %>
+  <li>
+    <p>Reference: <%= person.reference %></p>
+    <p>Firstname: <%= person.firstname %></p>
+    <p>lastname: <%= person.lastname %></p>
+    <p>email: <%= person.email %></p>
+    <p>address: <%= person.address %></p>
+  </li>
+  <% end %>
+</ul>
+<%= link_to "Accueil",  root_path %>
